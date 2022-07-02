@@ -15,7 +15,7 @@ const PostList = ({ page }) => {
 	return (
 		<>
 			{!data
-				? <div id="loader" >Loading...</div>
+				? <div className="loader">Loading...</div>
 				: data.map(post =>
 					<Post title={post.title} body={post.body} key={uuid()} />)
 			}
